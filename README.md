@@ -59,7 +59,7 @@ After you're finished please remove all the comments and instructions!
 
 > Sil frontend engineer assessment description
 
-**[your_project__name]** is a...
+<!-- **[your_project__name]** is a... -->
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -234,7 +234,7 @@ Feel free to check the [issues page](../../issues/).
 
   -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- LICENSE -->
 
