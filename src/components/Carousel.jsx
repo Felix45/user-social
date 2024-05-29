@@ -39,10 +39,10 @@ const Carousel = () => {
         navigation-prev-el=".swiper-button-prev"
         effect="cube"
         grab-cursor="true"
-        cube-effect-shadow="true"
-        cube-effect-slide-shadows="true"
-        cube-effect-shadow-offset="20"
-        cube-effect-shadow-scale="0.94"
+        cube-effect-shadow="false"
+        cube-effect-slide-shadows="false"
+        cube-effect-shadow-offset="0"
+        cube-effect-shadow-scale="0"
         style={{
           height: '100%',
           '--swiper-pagination-color': '#c32248',
