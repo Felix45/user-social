@@ -11,10 +11,7 @@ import { setProfile } from '../redux/slices/profileSlice';
 
 const NavBar = () => {
   const urls = {
-    Pixar: '/',
-    About: '/about',
-    People: '/people',
-    Albums: '/albums',
+    Users: '/users',
   };
 
   const dispatch = useDispatch();
@@ -49,9 +46,11 @@ const NavBar = () => {
           <ul className={`${mobile} z-20 flex flex-col shadow-lg absolute bg-black w-3/4 top-16 right-0 bottom-0 text-white md:shadow-none md:items-center md:flex md:mr-5 md:flex-row md:static md:top-0`}>
             {
           Object.keys(urls).map((item) => (
+            profile && (
             <li key={uuidv4()} className="p-4 font-bold border-dotted border-b md:border-0 md:px-1">
               <NavLink to={urls[item]} className="block">{item}</NavLink>
             </li>
+            )
           ))
          }
             {
