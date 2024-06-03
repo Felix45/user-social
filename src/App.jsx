@@ -5,6 +5,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import Landing from './pages/Landing';
 import Home from './pages/Home';
 import UserDetails from './pages/UserDetails';
+import AlbumDetail from './pages/AlbumDetail';
 import Layout from './Layout';
 import store from './redux/store';
 
@@ -19,6 +20,7 @@ const App = () => (
             <Route path="/" element={<Landing />} />
             <Route path="/users" element={<Home />} />
             <Route path="/users/:id" element={<UserDetails />} />
+            <Route path="/albums/:id" element={<AlbumDetail />} />
           </Route>
         </Routes>
       </PersistGate>
