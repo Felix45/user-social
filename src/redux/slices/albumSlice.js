@@ -4,7 +4,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 const initialState = {
   isLoading: false,
   isError: false,
-  albums: null,
+  albums: [],
 };
 
 export const fetchAlbumsThunk = createAsyncThunk(
