@@ -7,6 +7,8 @@ import authSlice from './slices/authSlice';
 import profileSlice from './slices/profileSlice';
 import peopleSlice from './slices/peopleSlice';
 import albumSlice from './slices/albumSlice';
+import photoSlice from './slices/photoSlice';
+import albumDetailSlice from './slices/albumDetailSlice';
 
 const persistConfig = { key: 'database', storage };
 const reducers = combineReducers({
@@ -14,6 +16,8 @@ const reducers = combineReducers({
   profile: profileSlice,
   people: peopleSlice,
   albums: albumSlice,
+  photos: photoSlice,
+  album: albumDetailSlice,
 });
 
 const persistedReducer = persistReducer(persistConfig, reducers);
