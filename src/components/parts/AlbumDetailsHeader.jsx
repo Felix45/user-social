@@ -1,3 +1,9 @@
+/**
+ * @name AlbumDetailsHeader
+ * @description AlbumDetailsHeader component that displays the header section of an albums details
+ * @param {String} title - The title of the album
+ * @returns {JSX.Element} - Rendered AlbumDetailsHeader component
+ */
 import PropTypes from 'prop-types';
 import albumPic from '../../assets/album.png';
 import capitalizeWord from '../../lib/capitalize';

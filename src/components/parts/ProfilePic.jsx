@@ -1,3 +1,11 @@
+/**
+ * @name ProfilePic
+ * @description ProfilePic component that displays a user profile icon
+ * @param {String} width - The width of the profile icon
+ * @param {String} height - The height of the profile icon
+ * @returns {JSX.Element} - A React element that renders a user profile icon
+ * 
+ */
 import PropTypes from 'prop-types';
 import { LuUser2 } from 'react-icons/lu';
 

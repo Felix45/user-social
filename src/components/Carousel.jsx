@@ -1,30 +1,16 @@
+/**
+ * @name Carousel
+ * @description  Carousel displays images in a slider
+ * @returns {JSX.Element} - A React element that displays images on a slider
+ */
 import { v4 as uuidv4 } from 'uuid';
 import { register } from 'swiper/element/bundle';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import bg from '../assets/slide.png';
-import family from '../assets/family.png';
-import beautiful from '../assets/beautiful.png';
+import sliders from '../data/slides';
 
 register();
 
 const Carousel = () => {
-  const sliders = [
-    {
-      img: bg,
-      title: 'Share Photos',
-      description: 'Share your memorable photos online with family and friends.',
-    },
-    {
-      img: beautiful,
-      title: 'Fun Albums',
-      description: 'Create memorable fun albums from your trips and events.',
-    },
-    {
-      img: family,
-      title: 'Loved Ones',
-      description: 'Share every memorable moment with your family.',
-    },
-  ];
 
   return (
     <section className="relative h-[300px] md:h-[500px]">

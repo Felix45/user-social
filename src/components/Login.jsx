@@ -1,3 +1,8 @@
+/**
+ * @name Login
+ * @description  Login component displays login with Google button
+ * @returns {JSX.Element} - A React element that displays a login button
+ */
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { googleLogout, useGoogleLogin } from '@react-oauth/google';

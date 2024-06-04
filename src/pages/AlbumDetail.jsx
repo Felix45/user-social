@@ -1,3 +1,8 @@
+/**
+ * @name AlbumDetail
+ * @description AlbumDetail component displays a list of photos in an album and an albums title
+ * @returns {JSX.Element} - A React element that displays a list of photos in an album and an albums title
+ */
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';

@@ -1,3 +1,6 @@
+/**
+ * This file contains the slice for the user profile after logging in.
+ */
 import axios from 'axios';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 

@@ -1,3 +1,8 @@
+/**
+ * @name PhotoEdit
+ * @description PhotoEdit component displays an image and a form to edit a photo title
+ * @returns {JSX.Element} - A React element that displays an image and a form to edit a photo title
+ */
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';

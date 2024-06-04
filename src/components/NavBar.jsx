@@ -1,3 +1,8 @@
+/**
+ * @name NavBar
+ * @description  NavBar displays the navigation bar
+ * @returns {JSX.Element} - A React element that displays the navigation bar
+ */
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { CgMenuRightAlt } from 'react-icons/cg';

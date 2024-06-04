@@ -1,3 +1,8 @@
+/**
+ * @name Gallery
+ * @description  Gallery displays images in a grid
+ * @returns {JSX.Element} - A React element that displays images in a grid
+ */
 import { useState } from 'react';
 import PhotoAlbum from 'react-photo-album';
 import photos from '../data/photos';

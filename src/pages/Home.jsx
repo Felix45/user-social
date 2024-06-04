@@ -1,3 +1,8 @@
+/**
+ * @name Home
+ * @description Home component displays a list of users and their albums count
+ * @returns {JSX.Element} - A React element that displays a list of users and their albums count
+ */
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';

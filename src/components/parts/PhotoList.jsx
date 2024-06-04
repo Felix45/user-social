@@ -1,3 +1,10 @@
+/**
+ * @name PhotoList
+ * @description PhotoList component that displays a list of photo items in an album
+ * @param {String} title - The title of the album
+ * @param {Array} photos - An array containing the photo items
+ * @returns {JSX.Element} - A React element that renders a list of photos
+ */
 import { v4 as uuidv4 } from 'uuid';
 import PropTypes from 'prop-types';
 import Photo from './Photo';

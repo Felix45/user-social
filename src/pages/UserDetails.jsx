@@ -1,3 +1,8 @@
+/**
+ * @name UserDetails
+ * @description UserDetails component displays a user's details and their albums
+ * @returns {JSX.Element} - A React element that displays a user's details and their albums
+ */
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams, useNavigate } from 'react-router-dom';
 

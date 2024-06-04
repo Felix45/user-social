@@ -1,3 +1,10 @@
+/**
+ * @name UserList
+ * @description UserList component that displays a list of users with their album count
+ * @param {Array} users - An array containing the users
+ * @param {Array} albums - An array containing the albums of a user
+ * @returns {JSX.Element} - A React Component that lists all the users
+ */
 import { v4 as uuidv4 } from 'uuid';
 import PropTypes from 'prop-types';
 import User from './User';

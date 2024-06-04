@@ -1,3 +1,8 @@
+/**
+ * @name Loader
+ * @description Loader displays a loading spinner
+ * @returns {JSX.Element} - A React element that displays a loading spinner
+ */
 const Loader = () => (
   <div className="flex flex-col min-h-screen justify-center items-center">
     <svg
