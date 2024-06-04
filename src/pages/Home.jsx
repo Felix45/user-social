@@ -1,15 +1,15 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { ImSpinner3 } from 'react-icons/im';
 import { useNavigate } from 'react-router-dom';
 import UserList from '../components/parts/UserList';
-
+import Loader from '../components/Loader';
 import { fetchPeopleThunk } from '../redux/slices/peopleSlice';
 import { fetchAlbumsThunk } from '../redux/slices/albumSlice';
 
 const Home = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
 
   const { profile } = useSelector((state) => state.profile);
   const { people } = useSelector((state) => state.people);
@@ -20,22 +20,23 @@ const Home = () => {
   }
 
   useEffect(() => {
-    dispatch(fetchPeopleThunk());
-    dispatch(fetchAlbumsThunk());
+    setLoading(true);
+    Promise.resolve(dispatch(fetchPeopleThunk())).then(() => {
+      dispatch(fetchAlbumsThunk());
+    }).then(() => { setLoading(false); });
   }, []);
 
   return (
-    <section className="flex lg:mt-20">
+    <>
       {
-            Array.isArray(people) ? (
+        loading ? (<Loader />)
+          : (
+            <section className="flex lg:mt-20">
               <UserList users={people} albums={albums} />
-            ) : (
-              <div>
-                <ImSpinner3 />
-              </div>
-            )
+            </section>
+          )
            }
-    </section>
+    </>
   );
 };
 
