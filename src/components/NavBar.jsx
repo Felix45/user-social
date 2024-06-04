@@ -16,6 +16,7 @@ import { setProfile } from '../redux/slices/profileSlice';
 
 const NavBar = () => {
   const urls = {
+    About: '/',
     Users: '/users',
   };
 
@@ -55,7 +56,7 @@ const NavBar = () => {
           Object.keys(urls).map((item) => (
 
             <li key={uuidv4()} className="p-4 font-bold border-dotted border-b md:border-0 md:px-1">
-              <NavLink to={urls[item]} className="block">{item}</NavLink>
+              <NavLink to={urls[item]} onClick={() => handleMenu(false)} className="block">{item}</NavLink>
             </li>
           ))
          }
