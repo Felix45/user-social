@@ -6,6 +6,7 @@ import Landing from './pages/Landing';
 import Home from './pages/Home';
 import UserDetails from './pages/UserDetails';
 import AlbumDetail from './pages/AlbumDetail';
+import PhotoEdit from './pages/PhotoEdit';
 import Layout from './Layout';
 import store from './redux/store';
 
@@ -21,6 +22,7 @@ const App = () => (
             <Route path="/users" element={<Home />} />
             <Route path="/users/:id" element={<UserDetails />} />
             <Route path="/albums/:id" element={<AlbumDetail />} />
+            <Route path="/photos/:id" element={<PhotoEdit />} />
           </Route>
         </Routes>
       </PersistGate>
