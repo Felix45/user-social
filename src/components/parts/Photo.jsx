@@ -1,16 +1,18 @@
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
+import capitalizeWord from '../../lib/capitalize';
 
 const Photo = ({ photo }) => {
-  const { thumbnailUrl, title } = photo;
+  const { id, thumbnailUrl, title } = photo;
 
   return (
-    <div className="shadow-2xl p-5 md:py-10">
+    <NavLink to={`/photos/${id}`} className="shadow-2xl p-5 md:py-10">
       <img key={photo.id} src={thumbnailUrl} alt={title} className="mx-auto md:h-[150px] md:w-[150px]" />
       <p className="hidden font-bold text-center mt-5 md:block">
-        {`${title.slice(0, 1).toUpperCase()}${title.slice(1, 20)}`}
+        { title ? capitalizeWord(title.slice(0, 20)) : '' }
         ...
       </p>
-    </div>
+    </NavLink>
   );
 };
 
