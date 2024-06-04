@@ -8,6 +8,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Loader from '../components/Loader';
 import capitalizeWord from '../lib/capitalize';
+import BackButton from '../components/parts/BackButton';
 import { fetchPhotoDetailThunk, editPhotoDetailThunk, updateTitle } from '../redux/slices/photoEditSlice';
 
 const PhotoEdit = () => {
@@ -64,6 +65,7 @@ const PhotoEdit = () => {
 
   return (
     <section className="container mx-auto p-5 md:px-5 xl:px-0">
+      <BackButton />
       {
     loading ? <Loader />
       : (

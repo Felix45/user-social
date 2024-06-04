@@ -9,10 +9,12 @@ import { v4 as uuidv4 } from 'uuid';
 import PropTypes from 'prop-types';
 import Photo from './Photo';
 import AlbumHeaderDetails from './AlbumDetailsHeader';
+import BackButton from './BackButton';
 
 const PhotoList = ({ title, photos }) => (
   <>
     <AlbumHeaderDetails title={title} />
+    <BackButton />
     <h2 className="container mx-auto font-bold text-dist font-black text-2xl p-5 mt-2 xl:px-0">
       Photos (
       { photos.length }
