@@ -111,6 +111,8 @@ Pixar App provides a convenient and enjoyable way for users to preserve and shar
 ## 🚀 Video demo <a name="live-demo"></a>
 - [Video Link to a live demo >> ](https://www.loom.com/share/3f4ff65120c94d009f46f558da44f0a6?sid=01aa229e-6950-4043-a259-a271d5dbb1bd)
 
+https://www.loom.com/share/3f4ff65120c94d009f46f558da44f0a6?sid=01aa229e-6950-4043-a259-a271d5dbb1bd
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
