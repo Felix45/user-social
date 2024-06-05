@@ -156,15 +156,7 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
-  $ npm run dev
-```
-
-### Run tests
-
-To run tests, run the following command:
-
-```sh
-  $ npm test
+  $ npm run demo
 ```
 
 ### See project on localhost
