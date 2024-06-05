@@ -2,7 +2,6 @@
  * @name Footer
  * @description Footer component that displays the footer of the page
  * @returns {JSX.Element} - A React component that renders the footer of the page
- 
  */
 const Footer = () => (
   <footer className="bg-black text-white p-5">

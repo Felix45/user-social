@@ -2,7 +2,6 @@
  * @name About
  * @description A component that displays information about the app
  * @returns A React Component that displays information about the app
- 
  */
 const About = () => (
   <section className="container mx-auto p-5">
