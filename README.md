@@ -69,14 +69,16 @@ Pixar App provides a convenient and enjoyable way for users to preserve and shar
 
 > This project is built with the following Stack.
 
-<details>
+<details open>
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+    <li><a href="https://tailwindcss.com/">Tailwind CSS</a></li>
   </ul>
 </details>
 
-<details>
+<details open>
   <summary>Server</summary>
   <ul>
     <li><a href="https://jsonplaceholder.typicode.com/">https://jsonplaceholder.typicode.com/</a></li>
@@ -108,6 +110,8 @@ Pixar App provides a convenient and enjoyable way for users to preserve and shar
 
 ## 🚀 Video demo <a name="live-demo"></a>
 - [Video Link to a live demo >> ](https://www.loom.com/share/3f4ff65120c94d009f46f558da44f0a6?sid=01aa229e-6950-4043-a259-a271d5dbb1bd)
+
+https://www.loom.com/share/3f4ff65120c94d009f46f558da44f0a6?sid=01aa229e-6950-4043-a259-a271d5dbb1bd
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,15 +158,7 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
-  $ npm run dev
-```
-
-### Run tests
-
-To run tests, run the following command:
-
-```sh
-  $ npm test
+  $ npm run demo
 ```
 
 ### See project on localhost
