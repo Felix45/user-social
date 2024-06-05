@@ -7,7 +7,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 const initialState = {
   isLoading: false,
   isError: false,
-  people: null,
+  people: [],
 };
 
 export const fetchPeopleThunk = createAsyncThunk(

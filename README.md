@@ -104,7 +104,7 @@ Pixar App provides a convenient and enjoyable way for users to preserve and shar
 
 > Click on the link below to see live application.
 
-- [Live Demo Link](https://www.google.com)
+- [Live Demo Link](https://xipar.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
