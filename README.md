@@ -55,9 +55,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 SIL Frontend Engineer Assessment <a name="about-project"></a>
+# 📖 Frontend Engineer Assessment <a name="about-project"></a>
 
-> Sil frontend engineer assessment description
+Pixar App provides a convenient and enjoyable way for users to preserve and share their cherished moments with friends, family, and the world. The app's interface is clean and user-friendly, designed with soft pastel colors to evoke a sense of nostalgia and warmth.
+
+<img src="screenshot.png" width="700px" />
 
 <!-- **[your_project__name]** is a... -->
 
@@ -65,7 +67,7 @@ After you're finished please remove all the comments and instructions!
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> This project is built using.
+> This project is built with the following Stack.
 
 <details>
   <summary>Client</summary>
@@ -77,14 +79,7 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Ruby on Rails</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://jsonplaceholder.typicode.com/">https://jsonplaceholder.typicode.com/</a></li>
   </ul>
 </details>
 
@@ -92,13 +87,14 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+> The application has the following features 
 
-- **Landing page**
-- **User authentication**
-- **User listing page**
-- **User details page**
-- **Album details page**
+- **A Landing page that describes what the application is about**
+- **Enables users to login into the application using GoogleOAuthentication API**
+- **A page for listing all the users**
+- **A page for displaying User details and his/her albums**
+- **An Album details page that lists all the photos in a given album**
+- **A photo details page that allows a user to edit the title of a photo in the album**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -121,7 +117,7 @@ After you're finished please remove all the comments and instructions!
 ### Prerequisites
 
 In order to run this project you need:
-  - node
+  - node v18.17.0
   - Git
 
 <!--
@@ -155,7 +151,7 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
-  $ npm start
+  $ npm run dev
 ```
 
 ### Run tests
@@ -192,7 +188,8 @@ To run tests, run the following command:
 
 > I intend to add this features in future.
 
-- [ ] **Video streaming**
+- **Add capability to stream videos using the App**
+- **Add capability to edit a photo using the App**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -207,11 +204,12 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> If you like this project.
+> If you like this project, please give it a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
