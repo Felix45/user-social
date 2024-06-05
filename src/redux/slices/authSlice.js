@@ -1,3 +1,6 @@
+/**
+ * This file contains the slice for the authentication a user during logging in
+ */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const initialState = {

@@ -1,6 +1,14 @@
+/**
+ * @name AlbumList
+ * @description AlbumList component that displays a list of album items
+ * @param {Object} user - An object containing the user details like id, name, email
+ * @param {Array} albums - An array containing the album items
+ * @returns {JSX.Element} - Rendered AlbumList component
+ */
 import { v4 as uuidv4 } from 'uuid';
 import PropTypes from 'prop-types';
 import Album from './Album';
+import BackButton from './BackButton';
 
 const AlbumList = ({ user, albums }) => {
   const albumsByPerson = (personId) => albums.filter((album) => album.userId === personId);
@@ -8,6 +16,7 @@ const AlbumList = ({ user, albums }) => {
 
   return (
     <>
+      <BackButton />
       <h2 className="container mx-auto font-bold text-dist font-black text-2xl p-5 mt-2 xl:px-0">
         Albums (
         {albumCount}

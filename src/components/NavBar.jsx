@@ -1,3 +1,8 @@
+/**
+ * @name NavBar
+ * @description  NavBar displays the navigation bar
+ * @returns {JSX.Element} - A React element that displays the navigation bar
+ */
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { CgMenuRightAlt } from 'react-icons/cg';
@@ -11,6 +16,7 @@ import { setProfile } from '../redux/slices/profileSlice';
 
 const NavBar = () => {
   const urls = {
+    About: '/',
     Users: '/users',
   };
 
@@ -43,30 +49,34 @@ const NavBar = () => {
           <span to="/">Pixar.</span>
         </NavLink>
         <nav className="flex justify-end md:justify-center">
+          {
+          profile && (
           <ul className={`${mobile} z-20 flex flex-col shadow-lg absolute bg-black w-3/4 top-16 right-0 bottom-0 text-white md:shadow-none md:items-center md:flex md:mr-5 md:flex-row md:static md:top-0`}>
             {
           Object.keys(urls).map((item) => (
-            profile && (
+
             <li key={uuidv4()} className="p-4 font-bold border-dotted border-b md:border-0 md:px-1">
-              <NavLink to={urls[item]} className="block">{item}</NavLink>
+              <NavLink to={urls[item]} onClick={() => handleMenu(false)} className="block">{item}</NavLink>
             </li>
-            )
           ))
          }
-            {
-          profile && (
-          <li className="p-4 font-bold border-dotted border-b md:border-0 md:hidden md:px-1">
-            <NavLink onClick={() => logOut()} className="block">Logout</NavLink>
-          </li>
-          )
-         }
+
+            <li className="p-4 font-bold border-dotted border-b md:border-0 md:hidden md:px-1">
+              <NavLink onClick={() => logOut()} className="block">Logout</NavLink>
+            </li>
           </ul>
+          )
+}
 
           <ul className="flex items-center">
-            <li className="text-white px-5 text-4xl md:hidden">
-              { open ? <IoClose onClick={() => handleMenu(false)} />
-                : <CgMenuRightAlt onClick={() => handleMenu(true)} /> }
-            </li>
+            {
+              profile && (
+              <li className="text-white px-5 text-4xl md:hidden">
+                { open ? <IoClose onClick={() => handleMenu(false)} />
+                  : <CgMenuRightAlt onClick={() => handleMenu(true)} /> }
+              </li>
+              )
+}
             <li>
               <Login />
             </li>

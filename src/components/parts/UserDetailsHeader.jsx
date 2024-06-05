@@ -1,3 +1,10 @@
+/**
+ * @name UserDetailsHeader
+ * @description UserDetailsHeader component that displays details of a user
+ * @param {Object} user - An object containing the user details like name, email, phone, website, company, address
+ * @returns {JSX.Element} - A React element that renders a user profile icon, name, email, phone, website, company, and address
+ */
+
 import PropTypes from 'prop-types';
 import ProfilePic from './ProfilePic';
 

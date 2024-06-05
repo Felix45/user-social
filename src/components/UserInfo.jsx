@@ -1,3 +1,8 @@
+/**
+ * @name UserInfo
+ * @description  UserInfo displays user information
+ * @returns {JSX.Element} - A React element that displays user information like name, email, and picture
+ */
 import { useSelector } from 'react-redux';
 
 const UserInfo = () => {

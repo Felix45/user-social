@@ -1,3 +1,8 @@
+/**
+ * @name App
+ * @description App component is the root component that wraps the entire application
+ * @returns {JSX.Element} - A React element that wraps the entire application
+ */
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { persistStore } from 'redux-persist';

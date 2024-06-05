@@ -1,3 +1,6 @@
+/**
+ * This file contains the redux slice for the photos in an album.
+ */
 import axios from 'axios';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 

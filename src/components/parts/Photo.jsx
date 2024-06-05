@@ -1,3 +1,9 @@
+/**
+ * @name Photo
+ * @description Photo component that displays details of a photo
+ * @param {Object} photo - An object containing the photo details like id, thumbnailUrl, title
+ * @returns {JSX.Element} - A React element that renders an image and it's title
+ */
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import capitalizeWord from '../../lib/capitalize';

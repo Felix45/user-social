@@ -1,3 +1,6 @@
+/**
+ * This file contains the slice for the photo detail page.
+ */
 import axios from 'axios';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 

@@ -1,3 +1,11 @@
+/**
+ * @name Album
+ * @description Album component that displays details of an album
+ * @param {Object} album - An object containing the album details like id, name, title
+ * @returns {JSX.Element} - Rendered Album component
+ * 
+ */
+
 import PropTypes from 'prop-types';
 import { FaPlay } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';

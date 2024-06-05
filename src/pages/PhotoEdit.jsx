@@ -1,7 +1,14 @@
+/**
+ * @name PhotoEdit
+ * @description PhotoEdit component displays an image and a form to edit a photo title
+ * @returns {JSX.Element} - A React element that displays an image and a form to edit a photo title
+ */
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import Loader from '../components/Loader';
 import capitalizeWord from '../lib/capitalize';
+import BackButton from '../components/parts/BackButton';
 import { fetchPhotoDetailThunk, editPhotoDetailThunk, updateTitle } from '../redux/slices/photoEditSlice';
 
 const PhotoEdit = () => {
@@ -58,8 +65,9 @@ const PhotoEdit = () => {
 
   return (
     <section className="container mx-auto p-5 md:px-5 xl:px-0">
+      <BackButton />
       {
-    loading ? <div>Loading...</div>
+    loading ? <Loader />
       : (
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
           <div className="shadow-2xl p-5">

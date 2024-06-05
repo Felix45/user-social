@@ -1,3 +1,9 @@
+/**
+ * @name About
+ * @description A component that displays information about the app
+ * @returns A React Component that displays information about the app
+ 
+ */
 const About = () => (
   <section className="container mx-auto p-5">
     <h1 className="text-3xl font-black mb-3 text-dist border-b pb-3">About Pixar.</h1>

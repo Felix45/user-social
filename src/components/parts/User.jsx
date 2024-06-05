@@ -1,3 +1,9 @@
+/**
+ * User component
+ * @description User component that displays details of a user
+ * @param {Object} user - An object containing the user details like id, name, and albums count
+ * @returns {JSX.Element} - A React element that renders a user profile icon, name, and albums count
+ */
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import ProfilePic from './ProfilePic';
