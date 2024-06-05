@@ -100,11 +100,14 @@ Pixar App provides a convenient and enjoyable way for users to preserve and shar
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo Link <a name="live-demo"></a>
 
 > Click on the link below to see live application.
 
-- [Live Demo Link](https://user-social.vercel.app/)
+- [Live Demo Link](https://usersocial.vercel.app/)
+
+## 🚀 Video demo <a name="live-demo"></a>
+- [Video Link to a live demo >> ](https://www.loom.com/share/3f4ff65120c94d009f46f558da44f0a6?sid=01aa229e-6950-4043-a259-a271d5dbb1bd)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
