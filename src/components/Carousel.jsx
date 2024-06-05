@@ -10,33 +10,31 @@ import sliders from '../data/slides';
 
 register();
 
-const Carousel = () => {
-
-  return (
-    <section className="relative h-[300px] md:h-[500px]">
-      <swiper-container
-        scrollbar-clickable="true"
-        mousewheel-invert="true"
-        navigation="true"
-        pagination="true"
-        pagination-clickable="true"
-        center-slides="true"
-        navigation-next-el=".swiper-button-next"
-        navigation-prev-el=".swiper-button-prev"
-        effect="cube"
-        grab-cursor="true"
-        cube-effect-shadow="false"
-        cube-effect-slide-shadows="false"
-        cube-effect-shadow-offset="0"
-        cube-effect-shadow-scale="0"
-        style={{
-          height: '100%',
-          '--swiper-pagination-color': '#c32248',
-          '--swiper-pagination-bullet-size': '15px',
-          '--swiper-navigation-next-el-color': '#c32248',
-        }}
-      >
-        {
+const Carousel = () => (
+  <section className="relative h-[300px] md:h-[500px]">
+    <swiper-container
+      scrollbar-clickable="true"
+      mousewheel-invert="true"
+      navigation="true"
+      pagination="true"
+      pagination-clickable="true"
+      center-slides="true"
+      navigation-next-el=".swiper-button-next"
+      navigation-prev-el=".swiper-button-prev"
+      effect="cube"
+      grab-cursor="true"
+      cube-effect-shadow="false"
+      cube-effect-slide-shadows="false"
+      cube-effect-shadow-offset="0"
+      cube-effect-shadow-scale="0"
+      style={{
+        height: '100%',
+        '--swiper-pagination-color': '#c32248',
+        '--swiper-pagination-bullet-size': '15px',
+        '--swiper-navigation-next-el-color': '#c32248',
+      }}
+    >
+      {
                     sliders.map(({
                       img, title, description,
                     }) => (
@@ -65,15 +63,14 @@ const Carousel = () => {
                       </swiper-slide>
                     ))
                 }
-      </swiper-container>
-      <div className="swiper-button-prev text-3xl text-dist absolute z-10 left-2 top-[45%] xl:left-[150px]">
-        <FaChevronLeft />
-      </div>
-      <div className="swiper-button-next text-3xl text-dist absolute z-10 right-2 top-[45%] xl:right-[150px]">
-        <FaChevronRight />
-      </div>
-    </section>
-  );
-};
+    </swiper-container>
+    <div className="swiper-button-prev text-3xl text-dist absolute z-10 left-2 top-[45%] xl:left-[150px]">
+      <FaChevronLeft />
+    </div>
+    <div className="swiper-button-next text-3xl text-dist absolute z-10 right-2 top-[45%] xl:right-[150px]">
+      <FaChevronRight />
+    </div>
+  </section>
+);
 
 export default Carousel;

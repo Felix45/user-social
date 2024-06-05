@@ -79,12 +79,13 @@ const PhotoEdit = () => {
           <div>
             <form className="flex flex-col gap-5 shadow-2xl rounded-lg p-5 md:ml-5" onSubmit={handleFormSubmit}>
               <div>
-                <label htmlFor="title" className="block mb-2 font-bold border-b pb-2">Edit Photo Title</label>
+                <div htmlFor="title" className="mb-2 font-bold border-b pb-2">Edit Photo Title</div>
                 <input
                   type="text"
                   id="title"
                   name="title"
                   value={newTitle}
+                  placeholder="Enter new title"
                   className="border mt-2 py-1 px-2 rounded-md w-full focus:outline-none"
                   onChange={(e) => handleChange(e)}
                 />
