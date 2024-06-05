@@ -69,14 +69,16 @@ Pixar App provides a convenient and enjoyable way for users to preserve and shar
 
 > This project is built with the following Stack.
 
-<details>
+<details open>
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+    <li><a href="https://tailwindcss.com/">Tailwind CSS</a></li>
   </ul>
 </details>
 
-<details>
+<details open>
   <summary>Server</summary>
   <ul>
     <li><a href="https://jsonplaceholder.typicode.com/">https://jsonplaceholder.typicode.com/</a></li>
